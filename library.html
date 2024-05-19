@@ -1,0 +1,41 @@
+<html>
+<head>
+    <title>COVID-19 Deaths Lookup</title>
+    <link rel="stylesheet" href="library-style.css">
+    <script src="library.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Lookup COVID-19<br>Deaths in any Country</h1>
+        <p>Stay Safe!</p>
+    </header>
+    <main>
+        <div id="form-box" class="box">
+            <form id="form">
+                <label for="country"><strong>Enter a country name:</strong></label>
+                <input type="text" id="country" placeholder="Enter Country" required>
+                <button type="submit">Search</button>
+            </form>
+            <div id="load" style="display: none;">
+                <strong>Please wait while we load the data!! ⏳</strong>
+            </div>
+        </div>
+        <div id="deathlist-box" class="box">
+            <table id="deathlist" style="display: none;">
+                <tr>
+                    <th>Country 🌍</th>
+                    <th>Total Deaths</th>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
