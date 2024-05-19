@@ -1,0 +1,81 @@
+
+<html>
+<head>
+    <title>COVID-19 Statistics by Country</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="pie-styles.css">
+</head>
+<body>
+    <header>
+    <nav>
+        <div class="container">
+            <h1>COVID-19 Pie Charts</h1>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="pie.html">Pie</a></li>
+                <li><a href="countries.html">Empty</a></li>
+                <li><a href="visualization.html">Empty</a></li>
+                <li><a href="visualization.html">Empty</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<section class="feature">
+    <h2>Overview</h2>
+    <p>Our pie chart page is a visualization tool designed to provide an intuitive representation of COVID-19 data. Using interactive pie charts, users can explore and analyze COVID-19 statistics for different countries. The page dynamically generates pie charts based on real-time data fetched from reliable sources.</p>
+</section>
+
+<section class="features">
+    <h2>Key Features</h2>
+    <ul>
+        <li><strong>Country Selection:</strong> Users can select a country of interest from a dropdown menu.</li>
+        <li><strong>Data Visualization:</strong> The selected country's COVID-19 statistics are visually presented in a pie chart format.</li>
+        <li><strong>Comprehensive Insights:</strong> The pie chart illustrates the distribution of COVID-19 cases into categories such as deaths, recoveries, and active cases, enabling users to grasp the current situation at a glance.</li>
+        <li><strong>Population-Based Sizing:</strong> The size of each pie chart segment is proportional to the country's population, providing context to the data visualization.</li>
+        <li><strong>Hover Information:</strong> Hovering over each segment reveals detailed information about the corresponding category, including the number of cases and percentage.</li>
+    </ul>
+</section>
+    <div id="search">
+        <input type="text" id="country-input" placeholder="Enter country name">
+        <button onclick="fetchCovidData()">Search</button>
+    </div>
+    <div id="initial-stats">
+        <div id="usa-stats" class="stats-section">
+            <h2>USA</h2>
+            <div class="chart-container">
+                <canvas id="usa-chart"></canvas>
+                <div class="chart-tooltip" id="usa-tooltip"></div>
+            </div>
+            <div id="usa-map" class="map"></div>
+        </div>
+        <div id="russia-stats" class="stats-section">
+            <h2>Russia</h2>
+            <div class="chart-container">
+                <canvas id="russia-chart"></canvas>
+                <div class="chart-tooltip" id="russia-tooltip"></div>
+            </div>
+            <div id="russia-map" class="map"></div>
+        </div>
+        <div id="china-stats" class="stats-section">
+            <h2>China</h2>
+            <div class="chart-container">
+                <canvas id="china-chart"></canvas>
+                <div class="chart-tooltip" id="china-tooltip"></div>
+            </div>
+            <div id="china-map" class="map"></div>
+        </div>
+    </div>
+    <div id="stats" class="stats-section" style="display: none;">
+        <div class="chart-container">
+            <canvas id="covid-chart"></canvas>
+            <div class="chart-tooltip" id="tooltip"></div>
+        </div>
+        <div id="map"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="pie-script.js"></script>
+</body>
+</html>
