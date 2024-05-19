@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>COVID-19 Data Visualization</title>
+    <link rel="stylesheet" href="home-styles.css">
+    <link rel="stylesheet" href="visualization-styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="visualization-script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <h1 style="font-size: xx-large;">COVID-19 Dashboard</h1>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="pie.html">Pie</a></li>
+                    <li><a href="library.html">Covid Library</a></li>
+                    <li><a href="visualization.html">Bar-Graph Chart</a></li>
+                    <li><a href="visualization.html">Empty</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="feature">
+            <h2>COVID-19 Bar-Graph Chart</h2>
+            <p>Visualize daily new COVID-19 cases globally over the past 30 days using an interactive bar chart.</p>
+        </section>
+        <div id="stats" class="stats-section">
+            <div class="chart-container">
+                <canvas id="covid-chart"></canvas>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
