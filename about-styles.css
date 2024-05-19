@@ -55,15 +55,15 @@ footer {
 }
 
 .feature h3 {
-    line-height: 2; /* Double-spaced */
-    font-size: 30px; /* Increased font size */
+    line-height: 2;
+    font-size: 30px; 
 }
 
 
 .feature p {
     color: #555;
-    line-height: 3; /* Double-spaced */
-    font-size: 30px; /* Increased font size */
+    line-height: 3; 
+    font-size: 30px; 
 }
 
 
