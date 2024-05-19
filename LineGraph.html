@@ -4,16 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>COVID-19 Trends</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="LineGraphStyles.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <div class="container">
+                <h1 style="font-size: xx-large;">COVID-19 Dashboard</h1>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="pie.html">Pie</a></li>
+                    <li><a href="countries.html">Empty</a></li>
+                    <li><a href="LineGraph.html">Trends Over Time</a></li>
+                    <li><a href="library.html">Covid Deaths Global Library</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     <h1>COVID-19 Trends</h1>
+    <h2>Hover over the graph to see cases/deaths are specific dates!</h2>
+    <h3>Note: These graphs go until March 2021 and have not been updated</h3>
     <button id="casesButton">Show Cases</button>
     <button id="deathsButton">Show Deaths</button>
     <canvas id="covidChart"></canvas>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
-    <script src="FinalProjScripts.js"></script>
+    <script src="LineGraphScripts.js"></script>
 </body>
 </html>
