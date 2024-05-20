@@ -19,14 +19,15 @@ This document provides instructions for developers who will be maintaining and f
 ## Prerequisites
 Before you begin, ensure you have met the following requirements:
 - You have a web browser installed (Chrome, Firefox, Edge, Safari).
-- 
+  
 ## Installation
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/oomarumd/Covid-final-proj.git
 2. **Navigate to Project Directory**
-   cd covid19-trends
-
+  ``` bash
+    cd covid19-trends
+```
 ## Running the Application
 Running Locally
 Open the home.html file:
